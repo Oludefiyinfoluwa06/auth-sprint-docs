@@ -1,8 +1,8 @@
-import React from 'react'
-import { Gamepad2, Lock, Route } from 'lucide-react'
+import React from 'react';
+import { Gamepad2, Lock, Route } from 'lucide-react';
 
 export default function Templates() {
-  const repoBase = 'https://github.com/Oludefiyinfoluwa06/auth-boilerplate-cli/blob/develop/auth-sprint-cli/auth-templates/express.js'
+  const repoBase = 'https://github.com/Oludefiyinfoluwa06/auth-sprint-cli/auth-templates/express.js';
 
   return (
     <section id="templates" className="w-full max-w-6xl mx-auto py-16 md:py-20 px-4 md:px-6">
@@ -34,5 +34,5 @@ export default function Templates() {
         <p className="text-slate-700 dark:text-slate-300 text-sm">Generated files are copied into your project root when you run the CLI. After generation, set <code className="bg-white dark:bg-slate-800 px-2 py-1 rounded text-xs font-mono">JWT_SECRET</code> and <code className="bg-white dark:bg-slate-800 px-2 py-1 rounded text-xs font-mono">JWT_EXPIRES_IN</code> in your environment.</p>
       </div>
     </section>
-  )
+  );
 }

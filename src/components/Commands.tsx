@@ -1,13 +1,14 @@
-import CodeBlock from './CodeBlock'
-import { Rocket, Lock } from 'lucide-react'
+import CodeBlock from './CodeBlock';
+import { Rocket, Lock } from 'lucide-react';
 
 export default function Commands() {
   const usage = `# Interactive
-npx auth-sprint
+    npx auth-sprint
 
-# Flags
-auth-sprint -f express.js -s jwt
-auth-sprint --framework express.js --strategy jwt`
+    # Flags
+    auth-sprint -f express.js -s jwt
+    auth-sprint --framework express.js --strategy jwt
+  `;
 
   return (
     <section id="commands" className="w-full max-w-6xl mx-auto py-16 md:py-20 px-4 md:px-6">
@@ -33,8 +34,8 @@ auth-sprint --framework express.js --strategy jwt`
 
       <div>
         <h4 className="font-bold text-slate-900 dark:text-white mb-4">Usage Examples</h4>
-        <CodeBlock code={usage} language="bash" />
+        <CodeBlock code={usage} />
       </div>
     </section>
-  )
+  );
 }

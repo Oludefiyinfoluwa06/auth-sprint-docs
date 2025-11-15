@@ -1,15 +1,16 @@
-import CodeBlock from './CodeBlock'
+import CodeBlock from './CodeBlock';
 
 export default function Hero() {
   const install = `# one-off use
-npx auth-sprint
+    npx auth-sprint
 
-# install globally
-npm install -g auth-sprint
-auth-sprint
+    # install globally
+    npm install -g auth-sprint
+    auth-sprint
 
-# run locally
-node index.js`
+    # run locally
+    node index.js
+  `;
 
   return (
     <section className="w-full max-w-6xl mx-auto py-16 md:py-20 px-4 md:px-6">
@@ -20,8 +21,8 @@ node index.js`
 
       <div className="mt-12">
         <h3 className="text-sm font-semibold text-slate-700 dark:text-slate-200 uppercase tracking-wide mb-3">Install & Run</h3>
-        <CodeBlock code={install} language="bash" />
+        <CodeBlock code={install} />
       </div>
     </section>
-  )
+  );
 }
